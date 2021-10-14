@@ -12,10 +12,6 @@ Set-DisRes 1600
 
 }
 
-#Make sure I have the latest OSD Content
-
-Write-Host -ForegroundColor Green "Updating OSD PowerShell Module"
-
 #Start OSDCloud
 
 Write-Host -ForegroundColor Green "Start OSDCloud ZTI (Win10 Professional, Version 21H2, German)"
