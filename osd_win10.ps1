@@ -16,12 +16,6 @@ Set-DisRes 1600
 
 Write-Host -ForegroundColor Green "Updating OSD PowerShell Module"
 
-Install-Module OSD -Force
-
-Write-Host -ForegroundColor Green "Importing OSD PowerShell Module"
-
-Import-Module OSD -Force
-
 #Start OSDCloud
 
 Write-Host -ForegroundColor Green "Start OSDCloud ZTI (Win10 Professional, Version 21H2, German)"
