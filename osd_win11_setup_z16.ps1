@@ -11,10 +11,9 @@
         ## download Lenovo Z16 driver and copy to drivers directory
         $url = "https://download.lenovo.com/pccbbs/mobiles/tp_z16_mt21d4-21d5_w11_21_202205.exe"
         $dest = "c:\Drivers\tp_z16_mt21d4-21d5_w11_21_202205.exe"
-        Remove-Item -Path c:\Drivers\* -Force -ErrorAction SilentlyContinue
+        Remove-Item -Path c:\Drivers\* -Force -recurse -ErrorAction SilentlyContinue
         Write-Host 'Drivers for Lenovo Z16 are now copied for installation. Please standby...'
-        $ProgressPreference = 'SilentlyContinue'
-        Invoke-WebRequest -uri $url -OutFile $dest        
+        curl.exe $url -o $dest -s        
         
         <#Remove APPX
         Write-Host -ForegroundColor Gray "Please standby while we are cleaning up your new OS from unneccessary Apps..."
