@@ -1,7 +1,4 @@
 Set-ExecutionPolicy RemoteSigned -Force
-
 Install-Module AutopilotOOBE -Force -Verbose
-
 Import-Module AutopilotOOBE -Force
-
-Start-AutopilotOOBE -Title 'j&s-soft Autopilot registration' -Assign -PostAction Restart
+Start-AutopilotOOBE -Title 'j&s-soft AG - Windows Autopilot registration' -Assign -PostAction Restart
